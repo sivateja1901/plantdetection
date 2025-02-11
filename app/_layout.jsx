@@ -36,18 +36,91 @@
 //     </NavigationContainer>
 //   );
 // }
-import { Stack } from 'expo-router';
+// import { Stack } from 'expo-router';
+
+// export default function Layout() {
+//   return (
+//     <Stack
+//       screenOptions={{
+//         headerStyle: { backgroundColor: '#4CAF50' },
+//         headerTintColor: '#fff',
+//         headerTitleAlign: 'center',
+//       }}
+//     />
+//   );
+// }
+// import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+// import { NavigationContainer } from "@react-navigation/native";
+// import { Ionicons } from "@expo/vector-icons";
+// import CropsScreen from "./crops";
+// import NewsScreen from "./news";
+// import AccountScreen from "./account";
+
+// const Tab = createBottomTabNavigator();
+
+// export default function Layout() {
+//   return (
+//     <NavigationContainer>
+//       <Tab.Navigator
+//         screenOptions={({ route }) => ({
+//           tabBarIcon: ({ color, size }) => {
+//             let iconName;
+//             if (route.name === "Your Crops") iconName = "leaf-outline";
+//             else if (route.name === "News") iconName = "newspaper-outline";
+//             else if (route.name === "Account") iconName = "person-outline";
+//             return <Ionicons name={iconName} size={size} color={color} />;
+//           },
+//           tabBarActiveTintColor: "#4CAF50",
+//           tabBarInactiveTintColor: "gray",
+//         })}
+//       >
+//         <Tab.Screen name="Your Crops" component={CropsScreen} />
+//         <Tab.Screen name="News" component={NewsScreen} />
+//         <Tab.Screen name="Account" component={AccountScreen} />
+//       </Tab.Navigator>
+//     </NavigationContainer>
+//   );
+// }
+// import React from 'react';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import { Ionicons } from '@expo/vector-icons';
+// import CropsScreen from './crops';  // Your crops page
+// import NewsScreen from './news';    // Your news page
+// import AccountScreen from './account';  // Your account page
+
+// const Tab = createBottomTabNavigator();
+
+// export default function Layout() {
+//   return (
+//     <Tab.Navigator
+//       screenOptions={({ route }) => ({
+//         tabBarIcon: ({ color, size }) => {
+//           let iconName;
+//           if (route.name === "Your Crops") iconName = "leaf-outline";
+//           else if (route.name === "News") iconName = "newspaper-outline";
+//           else if (route.name === "Account") iconName = "person-outline";
+//           return <Ionicons name={iconName} size={size} color={color} />;
+//         },
+//         tabBarActiveTintColor: "#4CAF50",
+//         tabBarInactiveTintColor: "gray",
+//       })}
+//     >
+//       <Tab.Screen name="Your Crops" component={CropsScreen} />
+//       <Tab.Screen name="News" component={NewsScreen} />
+//       <Tab.Screen name="Account" component={AccountScreen} />
+//     </Tab.Navigator>
+//   );
+// }
+import { Stack } from "expo-router";
 
 export default function Layout() {
   return (
-    <Stack
-      screenOptions={{
-        headerStyle: { backgroundColor: '#4CAF50' },
-        headerTintColor: '#fff',
-        headerTitleAlign: 'center',
-      }}
-    />
+    <Stack screenOptions={{ headerShown: false }} />
   );
 }
+
+
+
+
 
 
